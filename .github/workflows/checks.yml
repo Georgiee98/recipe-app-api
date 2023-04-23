@@ -3,8 +3,11 @@ name: Checks
 
 on: [push]
 
+
 jobs:
   test-lint:
+    - name: Lint Action
+    uses: wearerequired/lint-action@v2.3.0
     name: Test and Lint
     runs-on: ubuntu-20.04
     steps:
