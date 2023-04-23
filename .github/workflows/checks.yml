@@ -21,5 +21,7 @@ jobs:
         run: docker-compose run --rm app sh -c "python manage.py test"
       - name: Lint
         run: docker-compose run --rm app sh -c "flake8"
+      - name: Save state
+        run: echo "::save-state name={name}::{value}"
       - name: Set output
         run: echo "::set-output name={name}::{value}"
