@@ -1,1 +1,0 @@
-MY_VARIABLE=my_value
