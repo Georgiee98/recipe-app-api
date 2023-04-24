@@ -14,11 +14,21 @@ jobs:
       -
         name: Test
         run: docker-compose run --rm app sh -c "python manage.py wait_for_db && python manage.py test"
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USER }}/clockbox:latest
       -
         name: Lint
         run: docker-compose run --rm app sh -c "flake8"
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USER }}/clockbox:latest
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       -
         name: Checkout
