@@ -6,6 +6,7 @@ from psycopg2 import OperationalError as Psycopg20Error
 
 from django.db.utils import OperationalError 
 # when database isn't ready django ⬆️throws this error
+
 from django.core.management.base import BaseCommand
 
 
