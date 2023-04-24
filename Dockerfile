@@ -1,7 +1,7 @@
 FROM python:3.9-alpine3.13
 LABEL mainteiner="Gjorgi Delev"
 
-ENV PYTHONUNBUFFERD 1
+ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt /tmp/requirements.txt
 COPY ./requirements.dev.txt /tmp/requirements.dev.txt
@@ -20,7 +20,7 @@ RUN python -m venv /py && \
         then /py/bin/pip install -r /tmp/requirements.dev.txt ; \
     fi && \
     rm -rf /tmp && \
-    apk del .tmpt-build-deps && \
+    apk del .tmp-build-deps && \
     adduser \
         --disabled-password \
         --no-create-home \
