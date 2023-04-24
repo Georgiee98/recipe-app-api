@@ -29,7 +29,6 @@ jobs:
       -    
         name: Lint
         run: dokcer-compose run --rm app sh -c "flake8"
-      -
   build:
     steps:
       -
