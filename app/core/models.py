@@ -10,14 +10,6 @@ from django.contrib.auth.models import (
 )
 
 
-class UserManager(BaseUserManager):
-    """Manager of users."""
-    def create_user(self, email, password=None, **extra_field):
-        """Create, save and returna  new user."""
-        user = self.model(email=email, **extra_field)
-        user.set_password(password)
-        user.save(using=self._db)
-        return user
 
 
 # AbstUsr.. Authentication features.... and PermMixin Permissions Features
