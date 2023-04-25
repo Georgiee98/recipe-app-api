@@ -25,3 +25,11 @@ class AdminSiteTests(TestCase):
             password="testpass123",
             name="Test User"
         )
+
+    def test_user_list(self):
+        """Test that users are listed on page."""
+        url = reverse('admin:core_user_changelist')
+        res = self.client.get(url)
+
+        self.assertContains(res, self.user.name)
+        self.assertContains(res, self.user.email)
