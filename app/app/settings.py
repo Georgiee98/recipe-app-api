@@ -132,3 +132,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 TEST_DISCOVER_PATTERN = 'tests_models.py'
+
+AUTH_USER_MODEL = 'core.User'
