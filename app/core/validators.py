@@ -5,7 +5,7 @@ from django.utils.translation import gettext as _
 
 def validate_password_strength(password):
     # Your password validation logic goes here
-    if len(password) < 8:
+    if len(password) < 3:
         raise ValidationError(
             _("This password is too short. It must contain at least 8 characters.")
         )
