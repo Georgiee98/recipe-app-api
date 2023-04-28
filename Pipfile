@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "<3.3,>=3.2.4"
+djangorestframework = ">=3.12.4,<3.13"
+psycopg2 = "<2.9,>=2.8.6"
+drf-spectacular = "<0.27,>=0.26.2"
+
+[dev-packages]
+django = "<3.3,>=3.2.4"
+djangorestframework = "<3.13,>=3.12.4"
+psycopg2 = "<2.9,>=2.8.6"
+drf-spectacular = "<0.27,>=0.26.2"
+
+[requires]
+python_version = "3.9"
