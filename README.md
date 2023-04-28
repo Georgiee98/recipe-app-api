@@ -2,7 +2,7 @@
 
 > Source code for our course: Build a Backend REST API with Python & Django - Advanced.
 
-##  fully functioning REST API using:
+##  Fully functioning REST API using:
 
 - Python
 - Django / Django-REST-Framework
