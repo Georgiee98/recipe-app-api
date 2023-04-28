@@ -1,7 +1,5 @@
 # Recipe Application API project.
 
-> Source code for our course: Build a Backend REST API with Python & Django - Advanced.
-
 ##  Fully functioning REST API using:
 
 - Python
