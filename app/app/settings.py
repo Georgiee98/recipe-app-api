@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'drf_spectacular',
     'rest_framework.authtoken',
     'user',
+    'recipe',
 ]
 
 MIDDLEWARE = [
@@ -149,3 +150,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'core.validators.PasswordValidator',
     },
 ]
+
+SPECTACULAR_SETTINGS = {
+    'COMPONENT_SPLIT_REQUEST': True,
+}
