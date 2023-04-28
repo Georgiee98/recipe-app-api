@@ -1,7 +1,5 @@
 # Recipe Application API project.
 
-> Source code for our course: Build a Backend REST API with Python & Django - Advanced.
-
 ##  Fully functioning REST API using:
 
 - Python
@@ -13,7 +11,6 @@
 ##  Getting started
 To start project, run:
 ```docker-compose up```
-                                        *please be sure to be in the directory of recipe-app-api*
 ---
 Aavailable at [localhost](http://localhost:8000) or http://127.0.0.1:8000
 > Documentation of API: [api/docs/](http://localhost:8000/api/docs/)
