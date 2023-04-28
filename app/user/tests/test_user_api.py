@@ -36,8 +36,7 @@ class PublicUserApiTest(TestCase):
         self.assertEqual(res.status_code, status.HTTP_201_CREATED)
         user = get_user_model().objects.get(email=payload['email'])
         self.assertTrue(user.check_password(payload['password']))
-        # self.assertTrue(user.check_password(payload['name']))
-        self.assertNotIn('password', res.date) # don't return the password as a response
+        self.assertNotIn('password', res.data) # don't return the password as a response
 
 
     def test_user_with_email_exists_error(self):
@@ -104,7 +103,7 @@ class PublicUserApiTest(TestCase):
         res = self.client.post(TOKEN_URL, payload)
 
         self.assertNotIn('token', res.data)
-        self.assertEqual(res.status_code, status.HTTPS_400_BAD_REQUEST)
+        self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
 
     def test_retrieve_user_unauthorized(self):
         """Test authentication is required for users."""
