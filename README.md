@@ -11,7 +11,7 @@ The course teaches how to build a fully functioning REST API using:
 
 ---
 ##Getting started
-To start project, run:
+To start project, ==run:==
 `docker-compose up`
 ---
-Aavailable at [localhost](http://127.0.0.1:8000)/8000 or http://127.0.0.1:8000
+Aavailable at [localhost](http://localhost:8000) or http://127.0.0.1:8000
